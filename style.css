@@ -1,0 +1,23 @@
+body{
+    font-family: "Arial";
+}
+
+.centered {
+    text-align: center;
+}
+
+.left_aligned {
+    text-align: left;
+}
+
+.blue_background {
+    background-color: lightblue;
+}
+
+#desc1 {
+    color: darkslateblue;
+}
+
+#desc2 {
+    color: darkslateblue;
+}
