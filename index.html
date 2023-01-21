@@ -2,36 +2,39 @@
 <html> 
 
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>hw-02</title>
     <meta charset=utf-8/>
 </head>
+
+
 
 
 <body>
     <div id="data-abstraction">
         <div class="info">
             <h1 class="centered">Dataset Types</h1>
-            <table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr class="blue_background">
                     <th>Data</th>
                     <th>Link</th>
                     <th>Dataset Type</th>
                 </tr>
                 <!-- row for each dataset in data folder -->
-                <tr>
+                <tr class = "centered">
                     <td>UFO</td>
+                    <td><a href="data/UFO.csv">link</a></td>
+                    <td>Tables</td>
+                </tr>
+                <tr class = "centered">
                     <td>Airports</td>
+                    <td><a href="data/Airports.csv">link</a></td>
+                    <td>Geometry</td>
+                </tr>
+                <tr class = "centered">
                     <td>Google-Web</td>
-                </tr>
-                <tr>
-                    <a href="/data/UF0.csv">link</a>
-                    <a href="/data/Airports.csv">link</a>
-                    <a href="/data/Google-Web.csv">link</a>
-                </tr>
-                <tr>
-                    <td>ADD INFO</td>
-                    <td>ADD INFO</td>
-                    <td>ADD INFO</td>
+                    <td><a href="data/Google-Web.txt">link</a></td>
+                    <td>Networks</td>
                 </tr>
 
 
@@ -42,20 +45,28 @@
             <h1 class="centered">Dataset Types</h1>
             <h2 class="left_aligned">UFO</h2>
             <ul>
-                <li></li>
-                <li></li>
+                <li>Row data type: Attributes -> specific properties that can be measured or observed (ex. shape, duration)</li>
+                <li>Datetime: sequential quantitative datatype</li>
+                <li>City: categorical datatype</li>
+                <li>State: categorical datatype</li>
+                <li>Country: categorical datatype</li>
+                <li>Shape: categorical datatype</li>
+                <li>Duration: sequential quantitative datatype</li>
                 <!-- more data types -->
             </ul>
             <h2 class="left_aligned">Airports</h2>
             <ul>
-                <li></li>
-                <li></li>
+                <li>Row data type: Items -> each airport is an individual and discrete item</li>
+                <li>Airport Name: categorical datatype</li>
+                <li>Latitude: positional datatype</li>
+                <li>Longitude: positional datatype</li>
                 <!-- more data types -->
             </ul>
             <h2 class="left_aligned">Google-Web</h2>
             <ul>
-                <li></li>
-                <li></li>
+                <li>Row data type: Link -> relationship between two nodes</li>
+                <li>FromNodeId: item datatype</li>
+                <li>ToNodeId: item datatype</li>
                 <!-- more data types -->
             </ul>
         </div>
@@ -65,12 +76,12 @@
         <h1 class="centered">Task Abstraction</h1>
         <div class="flexbox">
             <div class="column">
-                <img src="vis1.png">
+                <img src="img/vis1.png">
                 <!-- diff font color; high,medium,low level actions of vis -->
                 <p id="desc1" class="left_aligned"></p> 
             </div>
             <div class="column">
-                <img src="vis2.png">
+                <img src="img/vis2.png">
                 <!-- diff font color; high,medium,low level actions of vis -->
                 <p id="desc2" class="left_aligned"></p>
             </div>
@@ -94,6 +105,8 @@
             <li>https://www.w3schools.com/html/html_tables.asp</li>
             <li>https://css-tricks.com/snippets/css/a-guide-to-flexbox/</li>
             <li>https://www.w3schools.com/html/html_links.asp</li>
+            <li>https://www.tutorialkart.com/css/css-how-to-display-horizontal-lines-between-table-rows/</li>
+
         </ul>
     </div>
 

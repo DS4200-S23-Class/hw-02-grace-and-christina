@@ -2,6 +2,11 @@ body{
     font-family: "Arial";
 }
 
+th, td {
+  border-bottom: 1px solid;
+  border-color: lightgray;
+}
+
 .centered {
     text-align: center;
 }
@@ -21,3 +26,4 @@ body{
 #desc2 {
     color: darkslateblue;
 }
+
