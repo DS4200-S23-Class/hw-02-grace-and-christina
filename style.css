@@ -19,6 +19,14 @@ th, td {
     background-color: lightblue;
 }
 
+.hover:hover {
+    fill: pink;
+}
+
+.border:hover {
+    stroke: pink;
+}
+
 #desc1 {
     color: darkslateblue;
 }
@@ -27,3 +35,8 @@ th, td {
     color: darkslateblue;
 }
 
+#circle1 {
+    cx: 20;
+    cy: 11;
+    r: 10
+}
