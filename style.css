@@ -1,33 +1,41 @@
+/* sets font of all text in the body */
 body{
     font-family: "Arial";
 }
 
+/* sets border thickness and color */
 th, td {
   border-bottom: 1px solid;
   border-color: lightgray;
 }
 
+/* centering headers */
 .centered {
     text-align: center;
 }
 
+/* aligning text to the left */
 .left_aligned {
     text-align: left;
 }
 
+/* makes header background for the table blue */
 .blue_background {
     background-color: lightblue;
 }
 
+/* color turns pink when hovering over rectangle */
 .hover:hover {
     fill: pink;
 }
 
+/* border turns pink when hovering over circle */
 .border:hover {
     stroke: pink;
     stroke-width: 4;
 }
 
+/* formatting column and color of words in flexbox columns */
 .flexbox {
     display: flex;
     flex-direction: row;
@@ -35,12 +43,14 @@ th, td {
     text-align: center;
 }
 
+/* formatting columns so they align and fit evenly */
 .flex_column {
     flex: 1;
     flex-basis: 0;
     width: 50%;
 }
 
+/* sets div spacing */
 div {
 justify-content: space-evenly;
 }
