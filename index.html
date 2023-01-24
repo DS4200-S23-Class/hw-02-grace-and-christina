@@ -11,9 +11,12 @@
 
 
 <body>
+    <!-- Data Abstraction Div -->
     <div id="data-abstraction">
+        <!-- Dataset Types Table Div -->
         <div class="info">
             <h1 class="centered">Dataset Types</h1>
+            <!-- Table Info -->
             <table width="100%" cellspacing="0" cellpadding="0">
                 <tr class="blue_background">
                     <th>Data</th>
@@ -40,6 +43,8 @@
             </table>
         </div>
 
+
+        <!-- Data Types Div -->
         <div class="info">
             <h1 class="centered">Data Types</h1>
             <h2 class="left_aligned">UFO</h2>
@@ -51,7 +56,6 @@
                 <li>Country: categorical datatype</li>
                 <li>Shape: categorical datatype</li>
                 <li>Duration: sequential quantitative datatype</li>
-                <!-- more data types -->
             </ul>
             <h2 class="left_aligned">Airports</h2>
             <ul>
@@ -59,49 +63,87 @@
                 <li>Airport Name: categorical datatype</li>
                 <li>Latitude: positional datatype</li>
                 <li>Longitude: positional datatype</li>
-                <!-- more data types -->
             </ul>
             <h2 class="left_aligned">Google-Web</h2>
             <ul>
                 <li>Row data type: Link -> relationship between two nodes</li>
                 <li>FromNodeId: item datatype</li>
                 <li>ToNodeId: item datatype</li>
-                <!-- more data types -->
             </ul>
         </div>
     </div>
 
+    <!-- Task Abstraction Div -->
     <div id="task-abstraction">
         <h1 class="centered">Task Abstraction</h1>
         <div class="flexbox">
-            <div class="column">
-                <img src="img/vis1.png">
-                <!-- diff font color; high,medium,low level actions of vis -->
-                <p id="desc1" class="left_aligned"></p> 
+            <!-- Vis 1 Descriptions -->
+            <div class="flex_column">
+                <img src="img/vis1.png" width="100%">
+                <h3 id="high1" class="left_aligned">High-Level Task</h3>
+                <p class="left_aligned">The high-level task of this
+                    visualization is to consume and discover. The visualization
+                    highlights the last 3 days' data points, so the user is able to
+                    determine how recent data aligns with the historical trend.</p> 
+                <h3 id="medium1" class="left_aligned">Medium-Level Task</h3>
+                <p class="left_aligned">The medium-level task of this
+                    visualization is to lookup. The highlighted data points draw the user's eye, so it is clear that the location is known and</p>
+                <h3 id="low1" class="left_aligned">Low-Level Task</h3>
+                <p class="left_aligned">The low-level task is to identify
+                    because the data points for the last 3 days are highlighted to
+                    stand out against the rest of the data. Therefore, the analysis
+                    is focused on just three points.</p>
+                <h3 id="target1" class="left_aligned">Target</h3>
+                <p class="left_aligned">The target of the visualization is
+                    outliers. It is clear that the highlighted three data points are
+                    higher than average according to the historical data plotted in
+                    grey. Therefore, it conveys that these data points are outliers.</p>
             </div>
-            <div class="column">
-                <img src="img/vis2.png">
-                <!-- diff font color; high,medium,low level actions of vis -->
-                <p id="desc2" class="left_aligned"></p>
+            <!-- Vis 2 Descriptions -->
+            <div class="flex_column">
+                <img src="img/vis2.png" width="100%">
+                <h3 id="high2" class="left_aligned">High-Level Task</h3>
+                <p class="left_aligned">The high-level task of this
+                    visualization is to consume and present. The visualization
+                    shows the comparison of summary statistics for two different
+                    locations. There is a clear and focused purpose of the visualization.</p> 
+                <h3 id="medium2" class="left_aligned">Medium-Level Task</h3>
+                <p class="left_aligned">The medium-level task of this
+                    visualization is to browse. We know that the visualization is
+                    analyzing specific data on temperatures, so it's easy for users
+                    to understand. The visualization also contains all years, so the
+                    user can view everything and make their own conclusions, no
+                    specific data points are highlighted.</p>
+                <h3 id="low2" class="left_aligned">Low-Level Task</h3>
+                <p class="left_aligned">The low-level task is to compare
+                    because there are two distinct locations where the same type of
+                    information is presented, so the main motive is to compare the
+                    temperature in the two locations.</p>
+                <h3 id="target2" class="left_aligned">Target</h3>
+                <p class="left_aligned">The target of the visualization is
+                    similarity. Two different location's data are being compared, so
+                    the target is to determine the relationship between the two
+                    locations.</p>
             </div>
         </div>
     </div>
 
     <!-- creates alternating circles and rectangles -->
-    <div id="decoration">
-        <!-- <svg viewbox="0 0 160 22">
-            <circle class="border" cx="12.5%" cy="50%" r="10" fill="green" opacity="0.5"/>
-            <rect class="hover" x="25%" y="4.5%" width="20" height="auto" stroke="black" stroke-width="1" fill="green"/>
-            <circle class="border" cx="50%" cy="50%" r="10" fill="green" opacity="0.5"/>
-            <rect class="hover" x="62.5%" y="4.5%" width="20" height="auto" stroke="black" stroke-width="1" fill="green"/>
-            <circle class="border" cx="87.5%" cy="50%" r="10" fill="green" opacity="0.5"/>
-        </svg> -->
-        <svg viewbox="0 0 160 22">
-            <circle class="border" cx="20" cy="11" r="10" fill="green" opacity="0.5"/>
-            <rect class="hover" x="40" y="1" width="20" height="20" stroke="black" stroke-width="1" fill="green"/>
-            <circle class="border" cx="80" cy="11" r="10" fill="green" opacity="0.5"/>
-            <rect class="hover" x="100" y="1" width="20" height="20" stroke="black" stroke-width="1" fill="green"/>
-            <circle class="border" cx="140" cy="11" r="10" fill="green" opacity="0.5"/>
+    <div id="decoration" class="flexbox">
+        <svg width="100" height="100">
+            <circle class="border" cx="50" cy="50" r="45" fill="green" opacity="0.5"/>
+        </svg>
+        <svg width="100" height="100" class = "square">
+            <rect class="hover" x="5" y="5" width="90" height="90" stroke="black" stroke-width="4" fill="palegoldenrod"/>
+        </svg>
+        <svg width="100" height="100"class = "circles">
+            <circle class="border" cx="50" cy="50" r="45" fill="green" opacity="0.5"/>
+        </svg>
+        <svg width="100" height="100">
+            <rect class="hover" x="5" y="5" width="90" height="90" stroke="black" stroke-width="4" fill="palegoldenrod"/>
+        </svg>
+        <svg width="100" height="100">
+            <circle class="border" cx="50" cy="50" r="45" fill="green" opacity="0.5"/>
         </svg>
     </div>
 
@@ -112,6 +154,9 @@
             <li>https://css-tricks.com/snippets/css/a-guide-to-flexbox/</li>
             <li>https://www.w3schools.com/html/html_links.asp</li>
             <li>https://www.tutorialkart.com/css/css-how-to-display-horizontal-lines-between-table-rows/</li>
+            <li>https://www.w3schools.com/cssref/css3_pr_justify-content.php</li>
+            <li>https://css-tricks.com/change-color-of-svg-on-hover/</li>
+
 
         </ul>
     </div>

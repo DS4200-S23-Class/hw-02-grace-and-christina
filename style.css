@@ -25,18 +25,23 @@ th, td {
 
 .border:hover {
     stroke: pink;
+    stroke-width: 4;
 }
 
-#desc1 {
-    color: darkslateblue;
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    color: darkgreen;
+    text-align: center;
 }
 
-#desc2 {
-    color: darkslateblue;
+.flex_column {
+    flex: 1;
+    flex-basis: 0;
+    width: 50%;
 }
 
-#circle1 {
-    cx: 20;
-    cy: 11;
-    r: 10
+div {
+justify-content: space-evenly;
 }
+
